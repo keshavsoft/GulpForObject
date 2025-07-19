@@ -38,8 +38,8 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
 
     @@include('./CrudOnObject/_sidenav.html', {
     "path": "../..",
-    "page": "fCreate",
-    "page_group":"fCreate"
+    "page": "showOnlyAlter",
+    "page_group":"showOnlyAlter"
     })
 
     <main class="content">
@@ -76,22 +76,6 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
                                 </th>
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>
-                                    <input type="text" class="form-control" id="HtmlKeyId" name="Key"
-                                        autocomplete="off" />
-                                </th>
-                                <th>
-                                    <input type="text" class="form-control" id="HtmlValueId" name="Value"
-                                        autocomplete="off" />
-                                </th>
-                                <th>
-                                    <button class="btn btn-sm btn-success save-btn" id="TableFooterSaveButtonId"
-                                        data-index="${index}">Save</button>
-                                </th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>
@@ -109,7 +93,7 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
 
 
 
-    <script type="module" src="../../Js/CrudOnObject/FCreate/entryFile.js"></script>
+    <script type="module" src="../../Js/CrudOnObject/ShowOnlyAlter/entryFile.js"></script>
 </body>
 
 </html>
