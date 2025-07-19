@@ -71,7 +71,7 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
                             <tr>
                                 <th data-field="Key">Key</th>
                                 <th data-field="Value">Value</th>
-                                <th data-field="KS-Alter" data-formatter="KSAlterFormatter">Options</th>
+                                <th data-field="KS-Delete" data-formatter="KSDeleteFormatter">Options</th>
                             </tr>
                         </thead>
                     </table>
@@ -89,14 +89,14 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
         })
     </main>
     <script>
-        window.KSAlterFormatter = function (value, row, index) {
-            return `<i class="bi bi-pencil-square text-primary" style="cursor:pointer;" title="Edit"></i>`;
+        window.KSDeleteFormatter = function (value, row, index) {
+            return `<i class="bi bi-trash text-danger" style="cursor:pointer;" title="Edit"></i>`;
         };
 
     </script>
 
 
-    <script type="module" src="../../Js/CrudOnObject/ShowOnlyAlter/entryFile.js"></script>
+    <script type="module" src="../../Js/CrudOnObject/ShowOnlyDelete/entryFile.js"></script>
 </body>
 
 </html>

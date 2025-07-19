@@ -38,8 +38,8 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
 
     @@include('./CrudOnObject/_sidenav.html', {
     "path": "../..",
-    "page": "showOnlyAlter",
-    "page_group":"showOnlyAlter"
+    "page": "fCreate",
+    "page_group":"fCreate"
     })
 
     <main class="content">
@@ -65,16 +65,24 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
             <div class="card-body">
                 <div class="table-responsive">
 
-                    <table id="table" class="table table-bordered table-striped" data-show-footer="true"
-                        data-toolbar="#toolbar">
-                        <thead>
-                            <tr>
-                                <th data-field="Key">Key</th>
-                                <th data-field="Value">Value</th>
-                                <th data-field="KS-Alter" data-formatter="KSAlterFormatter">Options</th>
-                            </tr>
-                        </thead>
-                    </table>
+                    <form id="FormId" class="p-3 border rounded shadow-sm bg-light" style="max-width: 400px;">
+                        <div class="mb-3">
+                            <label for="keyInput" class="form-label">Key</label>
+                            <input type="text" class="form-control" id="keyInput" name="Key" placeholder="Enter key"
+                                disabled>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="valueInput" class="form-label">Value</label>
+                            <input type="text" class="form-control" id="valueInput" name="Value"
+                                placeholder="Enter value">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="UpdateButtonId">
+                            Update
+                        </button>
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -88,15 +96,10 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
         "path": "../.."
         })
     </main>
-    <script>
-        window.KSAlterFormatter = function (value, row, index) {
-            return `<i class="bi bi-pencil-square text-primary" style="cursor:pointer;" title="Edit"></i>`;
-        };
-
-    </script>
 
 
-    <script type="module" src="../../Js/CrudOnObject/ShowOnlyAlter/entryFile.js"></script>
+
+    <script type="module" src="../../Js/CrudOnObject/Update/entryFile.js"></script>
 </body>
 
 </html>

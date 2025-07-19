@@ -58,30 +58,53 @@
                     <span class="sidebar-text">Dashboard</span>
                 </a>
             </li>
+
             <li class="nav-item @@if (context.page === 'fCreate') { active }">
                 <a href="@@path/pages/CrudOnObject/fCreate.html" class="nav-link">
-                    <span class="sidebar-icon text-danger">
-                        <i class="bi bi-card-checklist me-2" style="color:rgb(3, 205, 30);"></i>
+                    <span class="sidebar-icon">
+                        <i class="bi bi-plus-square me-2 text-success"></i>
                     </span>
                     <span class="sidebar-text">FCreate</span>
                 </a>
             </li>
+
             <li class="nav-item @@if (context.page === 'fCreateWS') { active }">
                 <a href="@@path/pages/CrudOnObject/fCreateWS.html" class="nav-link">
-                    <span class="sidebar-icon text-danger">
-                        <i class="bi bi-journal-plus me-2" style="color:aqua;"></i>
+                    <span class="sidebar-icon">
+                        <i class="bi bi-pencil-square me-2 text-warning"></i>
                     </span>
                     <span class="sidebar-text">FCreateWS</span>
                 </a>
             </li>
+
             <li class="nav-item @@if (context.page === 'showOnlyAsIs') { active }">
                 <a href="@@path/pages/CrudOnObject/showOnlyAsIs.html" class="nav-link">
-                    <span class="sidebar-icon text-danger">
-                        <i class="bi bi-journal-plus me-2" style="color:aqua;"></i>
+                    <span class="sidebar-icon">
+                        <i class="bi bi-eye me-2 text-info"></i>
                     </span>
-                    <span class="sidebar-text">showOnlyAsIs</span>
+                    <span class="sidebar-text">Show AsIs</span>
                 </a>
             </li>
+
+            <li class="nav-item @@if (context.page === 'showOnlyAlter') { active }">
+                <a href="@@path/pages/CrudOnObject/showOnlyAlter.html" class="nav-link">
+                    <span class="sidebar-icon">
+                        <i class="bi bi-pencil-fill me-2 text-warning"></i>
+                    </span>
+                    <span class="sidebar-text">Alter</span>
+                </a>
+            </li>
+
+            <li class="nav-item @@if (context.page === 'showOnlyDelete') { active }">
+                <a href="@@path/pages/CrudOnObject/showOnlyDelete.html" class="nav-link">
+                    <span class="sidebar-icon">
+                        <i class="bi bi-trash-fill me-2 text-danger"></i>
+                    </span>
+                    <span class="sidebar-text">Delete</span>
+                </a>
+            </li>
+
+
             <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
         </ul>
 
