@@ -38,8 +38,8 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
 
     @@include('./CrudOnObject/_sidenav.html', {
     "path": "../..",
-    "page": "fCreate",
-    "page_group":"fCreate"
+    "page": "showOnlyAsIs",
+    "page_group":"showOnlyAsIs"
     })
 
     <main class="content">
@@ -71,27 +71,11 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
                             <tr>
                                 <th data-field="Key">Key</th>
                                 <th data-field="Value">Value</th>
-                                <th data-field="KS-Save">
+                                <!-- <th data-field="KS-Save">
                                     Options
-                                </th>
+                                </th> -->
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>
-                                    <input type="text" class="form-control" id="HtmlKeyId" name="Key"
-                                        autocomplete="off" />
-                                </th>
-                                <th>
-                                    <input type="text" class="form-control" id="HtmlValueId" name="Value"
-                                        autocomplete="off" />
-                                </th>
-                                <th>
-                                    <button class="btn btn-sm btn-success save-btn" id="TableFooterSaveButtonId"
-                                        data-index="${index}">Save</button>
-                                </th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>
@@ -109,7 +93,7 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
 
 
 
-    <script type="module" src="../../Js/CrudOnObject/FCreate/entryFile.js"></script>
+    <script type="module" src="../../Js/CrudOnObject/ShowOnlyAsIs/entryFile.js"></script>
 </body>
 
 </html>
