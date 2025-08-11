@@ -39,7 +39,7 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
     @@include('./CrudOnObject/_sidenav.html', {
     "path": "../..",
     "page": "showWithSerial",
-    "page_group":"showWithSerial"
+    "page_group":"showOnly"
     })
 
     <main class="content">
@@ -69,6 +69,7 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
                         data-toolbar="#toolbar" data-search="true">
                         <thead>
                             <tr>
+                                <th data-field="KS-Serial" data-formatter="window.GlobalSerialFormatter">#</th>
                                 <th data-field="Key">Key</th>
                                 <th data-field="Value">Value</th>
                                 <!-- <th data-field="KS-Save">
