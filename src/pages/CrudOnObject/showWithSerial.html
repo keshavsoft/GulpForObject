@@ -38,8 +38,8 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
 
     @@include('./CrudOnObject/_sidenav.html', {
     "path": "../..",
-    "page": "showOnlyAsIs",
-    "page_group":"ShowOnlyAsIs"
+    "page": "showWithSerial",
+    "page_group":"showWithSerial"
     })
 
     <main class="content">
@@ -91,9 +91,12 @@ Footer input values are sent as numbers for numeric fields (like Amount) and as 
         })
     </main>
 
-
-
-    <script type="module" src="../../Js/CrudOnObject/ShowOnlyAsIs/entryFile.js"></script>
+    <script>
+         window.GlobalSerialFormatter = (value, row, index) => {
+                return index + 1;
+            };
+    </script>
+    <script type="module" src="../../Js/CrudOnObject/ShowWithSerial/entryFile.js"></script>
 </body>
 
 </html>
