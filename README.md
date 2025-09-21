@@ -210,3 +210,7 @@ Facebook: <https://www.facebook.com/themesberg/>
 Dribbble: <https://dribbble.com/themesberg>
 
 Instagram: <https://www.instagram.com/themesberg/>
+
+### 1.4.2
+
+- protected perfect

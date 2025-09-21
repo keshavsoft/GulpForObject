@@ -1,0 +1,91 @@
+<!--
+
+=========================================================
+* Volt Free - Bootstrap 5 Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2021 Themesberg (https://www.themesberg.com)
+* License (https://themesberg.com/licensing)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+
+<!--
+KeshavSoft
+
+Footer input values are sent as numbers for numeric fields (like Amount) and as strings for others.
+ It provides a table with input fields in the footer for new data entry. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+    "path": "../..",
+    "title": "Volt Free Bootstrap Dashboard - Bootstrap FixedCol"
+    })
+</head>
+
+<body>
+    @@include('./CrudOnObject/_nav.html', {
+    "path": "../.."
+    })
+
+    @@include('./CrudOnObject/_sidenav.html', {
+    "path": "../..",
+    "page": "fCreate",
+    "page_group":"fCreate"
+    })
+
+    <main class="content">
+        @@include('./CrudOnObject/_topbar.html', {
+        "path": "../.."
+        })
+
+        <div class="card mt-5">
+            <div class="card-body">
+                <div class="table-responsive">
+
+                    <form id="FormId" class="p-3 border rounded shadow-sm bg-light" style="max-width: 400px;">
+                        <div class="mb-3">
+                            <label for="keyInput" class="form-label">Key</label>
+                            <input type="text" class="form-control" id="keyInput" name="Key" placeholder="Enter key"
+                                disabled>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="valueInput" class="form-label">Value</label>
+                            <input type="text" class="form-control" id="valueInput" name="Value"
+                                placeholder="Enter value">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="UpdateButtonId">
+                            Update
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        @@include('./CrudOnObject/_footer.html', {
+        "path": "../..",
+        "classes": "bg-gray-800 text-white"
+        })
+        @@include('./CrudOnObject/_scriptsWithBSTable.html', {
+        "path": "../.."
+        })
+    </main>
+
+
+
+    <script type="module" src="../../Js/CrudOnObject/Update/entryFile.js"></script>
+</body>
+
+</html>

@@ -1,11 +1,12 @@
 {
     "name": "GulpForObject",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "description": "Volt - Bootstrap 5 Dashboard",
     "main": "gulpfile.js",
     "author": "Themesberg",
     "scripts": {
-        "dist": "gulp build:dist"
+        "dist": "gulp build:dist build:distForProtected",
+        "distForProtected": "gulp build:distForProtected"
     },
     "keywords": [
         "bootstrap",
