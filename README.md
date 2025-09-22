@@ -214,3 +214,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.4.2
 
 - protected perfect
+
+### 1.4.3
+
+- ignore added

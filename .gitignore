@@ -1,7 +1,10 @@
 node_modules/
 .temp/
 html&css/
-dist/
+
 *.zip
 docs/
 .DS_Store
+
+distForProtected/
+dist/
